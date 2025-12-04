@@ -1,9 +1,9 @@
 import file_line_reader from './io'
 
+const num_batteries = 12
 let total = 0
 
 for await (const line of file_line_reader('input/day03')) {
-    const num_batteries = 12
     let idx = 0
     let joltage = 0
 
