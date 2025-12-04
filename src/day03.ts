@@ -1,0 +1,27 @@
+import file_line_reader from './io'
+
+let total = 0
+
+for await (const line of file_line_reader('input/day03')) {
+    const num_batteries = 12
+    let idx = 0
+    let joltage = 0
+
+    for (let i = num_batteries; i > 0; i--) {
+        let max = 0
+
+        for (let x = idx; x < line.length - (i - 1); x++) {
+            const n = Number(line[x])
+            if (n > max) {
+                max = n
+                idx = x + 1
+            }
+        }
+
+        joltage += max * 10 ** (i - 1)
+    }
+
+    total += joltage
+}
+
+console.log(total)
