@@ -15,3 +15,6 @@ Another easy one, but the off by one errors here can be kinda crazy.
 
 ### Day 4
 Typescript quite annoying here as it doesn't understand we've checked the bounds. !'s everywhere unfortunately.
+
+### Day 5
+This seemed like it was going to be an easy "Just use a set" challenge, but we need to be more efficient than that. Ended up just sorting the ranges and then expanding and deleting as we went.
