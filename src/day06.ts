@@ -1,5 +1,4 @@
-const text = await Bun.file('input/day06').text()
-const rows = text.split('\n')
+const rows = (await Bun.file('input/day06').text()).split('\n')
 const ops = rows.pop() as string
 const results: number[] = []
 let right = ops.length
