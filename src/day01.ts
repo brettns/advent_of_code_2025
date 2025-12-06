@@ -1,12 +1,15 @@
-import file_read_lines from './io'
-
+const lines = (await Bun.file('input/day01').text()).split('\n')
 let total_zeroes = 0
 let dial = 50
 
-for await (const line of file_read_lines('input/day01')) {
+for (const line of lines) {
     const dir = line[0] === 'L' ? -1 : 1
     let amount = parseInt(line.substring(1))
     let num_zeroes = 0
+
+    if (Number.isNaN(amount)) {
+        console.log(line)
+    }
 
     if (dir > 0 || dial === 0) {
         num_zeroes = Math.floor((dial + amount) / 100)
