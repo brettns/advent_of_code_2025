@@ -3,8 +3,8 @@ const sep_idx = text.indexOf('\n\n')
 let ranges = text
     .substring(0, sep_idx)
     .split('\n')
-    .map((line) => line.split('-').map(Number))
-    .map((arr) => ({ min: arr[0], max: arr[1] }))
+    .map(line => line.split('-').map(Number))
+    .map(arr => ({ min: arr[0], max: arr[1] }))
 
 ranges.sort((a, b) => (a.min < b.min ? 1 : -1))
 

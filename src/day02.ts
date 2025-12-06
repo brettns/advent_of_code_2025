@@ -1,5 +1,5 @@
 const text = await Bun.file('input/day02').text()
-const pairs = text.split(',').map((p) => p.split('-').map(Number) as [number, number])
+const pairs = text.split(',').map(p => p.split('-').map(Number) as [number, number])
 let total = 0
 
 for (const pair of pairs) {

@@ -1,4 +1,4 @@
-const grid = (await Bun.file('input/day04').text()).split('\n').map((line) => line.split(''))
+const grid = (await Bun.file('input/day04').text()).split('\n').map(line => line.split(''))
 const height = grid.length
 const width = grid[0].length
 let total = 0
@@ -11,7 +11,7 @@ while (removed > 0) {
         for (let x = 0; x < grid[y].length; x++) {
             if (grid[y][x] === '@') {
                 const count = get_neighbors(x, y)
-                    .filter((n) => n === '@')
+                    .filter(n => n === '@')
                     .toArray().length
 
                 if (count < 4) {
