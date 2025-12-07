@@ -7,10 +7,6 @@ for (const line of lines) {
     let amount = parseInt(line.substring(1))
     let num_zeroes = 0
 
-    if (Number.isNaN(amount)) {
-        console.log(line)
-    }
-
     if (dir > 0 || dial === 0) {
         num_zeroes = Math.floor((dial + amount) / 100)
     } else {
