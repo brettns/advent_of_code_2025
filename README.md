@@ -1,6 +1,6 @@
 # Advent of Code 2025
 
-Advent of code 2025 using bun/typescript
+Advent of code 2025 using bun/typescript. Only part 2 solutions.
 
 ## Notes
 
@@ -21,3 +21,6 @@ This seemed like it was going to be an easy "Just use a set" challenge, but we n
 
 ### Day 6: Trash Compactor
 A sliding right-to-left window using the operators line as a guide with a bunch of Array reduce() usage.
+
+### Day 7: Laboratories
+Part 2 for this one was a little confusing as to what the actual goal was, but I eventually got it simplified down pretty nicely.
