@@ -7,8 +7,8 @@ let removed = 1
 while (removed > 0) {
     removed = 0
 
-    for (let y = 0; y < grid.length; y++) {
-        for (let x = 0; x < grid[y].length; x++) {
+    for (let y = 0; y < height; y++) {
+        for (let x = 0; x < width; x++) {
             if (grid[y][x] === '@') {
                 const count = get_neighbors(x, y)
                     .filter(n => n === '@')

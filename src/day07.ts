@@ -16,4 +16,5 @@ for (let y = 1; y < grid.length; y++) {
     }
 }
 
-console.log(counts[counts.length - 1].reduce((acc, curr) => acc + curr, 0))
+const total_beams = counts[counts.length - 1].reduce((acc, curr) => acc + curr, 0)
+console.log(total_beams)
